@@ -45,9 +45,51 @@
 // let result
 // console.log(result)
 
-function about(name, age){
-    console.log('hello ' +name+' your age is ' +age)
+// function about(name, age){
+//     console.log('hello ' +name+' your age is ' +age)
+// }
+// // console.log(about('aman',20))
+// about('aman',20)
+// about() 
+
+// function about(name, age, city){
+//     console.log('hello' +name+ 'your age is ' +age+ 'your city is '+city)
+// }
+
+// about('aman',30, 'delhi')
+// about('aman',20)
+
+
+// const greet = function(name, age){
+//     console.log('hello ' +name+' your age is ' +age)
+// }
+
+
+// function greet1(name, age){
+//     console.log('hello ' +name+' your age is ' +age)
+// }
+// greet('aman',20)
+// greet('rohan',30)
+
+// greet1('greet2',30)
+// function greet1(name, age){
+// console.log('helo' +name 'your age is ' +age)
+// }
+
+// greet2('greet1', 44)
+// const greet2 =function(name, age){
+//     console.log('helo' +name 'your age is ' +age)
+// }
+
+// console.log(this)
+
+console.log(this)
+
+const obj = {
+    name:'aman',
+    greet:function(){
+        console.log(this)
 }
-// console.log(about('aman',20))
-about('aman',20)
-about()
+}
+
+obj.greet()
