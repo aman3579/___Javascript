@@ -83,13 +83,13 @@
 
 // console.log(this)
 
-console.log(this)
+// console.log(this)
 
-const obj = {
-    name:'aman',
-    greet:function(){
-        console.log(this)
-}
-}
+// const obj = {
+//     name:'aman',
+//     greet:function(){
+//         console.log(this)
+// }
+// }
 
-obj.greet()
+// obj.greet()
