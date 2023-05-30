@@ -70,7 +70,7 @@
 
 // const callbackFunc = function(item, index){
 //     console.log(item, index)
-}
+
 // arr.forEach(callbackFunc)
 
 //this can be used directly. it is other method
@@ -82,15 +82,51 @@
 //     console.log(potato,indexyyyy)
 // })
 
-const arr = [1,2,3,4,5,6,7,8,9,10]
-const newarr = []
-for(let i=0; i<arr.length; i++){
-    newarr.push(arr[i]*9)
-}
+// const arr = [1,2,3,4,5,6,7,8,9,10]
+const newArr = []
 
-console.log(newarr)
+// for(let i=0; i<arr.length; i++){
+//     newArr.push(arr[i]*9)
+// }
+
+// console.log(newArr)
+
+// arr.forEach(function(item){
+//     newArr.push(item*19)
+// })
+// console.log(newArr)
+
+// const newArr2 = arr.map(function(item){
+//     return item*19
+// })
+
+// console.log(newArr2)
+
+// let res = 0
+// for(let i=0; i<arr.length; i++){
+//     res +=arr[i]
+// }
+// console.log(res)
 
 
+//reduce function
+// const reduceFunction = function(previousValue, currentValue){
+//     return previousValue+currentValue
+// }
+
+// const res2 = arr.reduce(reduceFunction, 0)
+// console.log(res2)
+
+
+var arr = [1,2,3,4,5,6,7,8,9]
+var total = 0
+
+console.log(arr)
+
+total = arr.reduce(total,num)=>{
+    return total + num}
+    
+console.log(total)
 
 
 
