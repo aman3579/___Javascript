@@ -109,13 +109,13 @@ const newArr = []
 // console.log(res)
 
 
-//reduce function
-// const reduceFunction = function(previousValue, currentValue){
-//     return previousValue+currentValue
-// }
+reduce function
+const reduceFunction = function(previousValue, currentValue){
+    return previousValue+currentValue
+}
 
-// const res2 = arr.reduce(reduceFunction, 0)
-// console.log(res2)
+const res2 = arr.reduce(reduceFunction, 0)
+console.log(res2)
 
 
 var arr = [1,2,3,4,5,6,7,8,9]
@@ -125,7 +125,7 @@ console.log(arr)
 
 total = arr.reduce(total,num)=>{
     return total + num}
-    
+
 console.log(total)
 
 
