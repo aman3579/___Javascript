@@ -67,8 +67,8 @@
 // console.log(li)  //will print <li>task4</li>
 
 
-const todos = ['task1', 'task2', 'task3', 'task4']
-const list = document.querySelector('ul')
+// const todos = ['task1', 'task2', 'task3', 'task4']
+// const list = document.querySelector('ul')
 
 // todos.forEach((todo)=>{
 // const li = document.createElement('li')
@@ -89,17 +89,36 @@ const list = document.querySelector('ul')
 //     list.appendChild(li)
 // }
 
-const input = document.querySelector('input')
-const handleClick = ()=>{
-    const data = input.value
-    if(data ===''){
-    return alert('Plz enter a value')}
-    console.log(input.value)
-    const li = document.createElement('li')
-    li.innerHTML = input.value
-    console.log(li)
-    list.appendChild(li)
+// const input = document.querySelector('input')
+// const handleClick = ()=>{
+//     const data = input.value
+//     if(data ===''){    //if we enter no value then a promp will be promopted asking us to ener a value
+//     return alert('Plz enter a value')}
+//     console.log(input.value)
+//     const li = document.createElement('li')
+//     li.innerHTML = input.value
+//     console.log(li)
+//     list.appendChild(li)
+// }
+
+
+// const heading = document.querySelector('h1')
+// console.log(heading.classList)
+// heading.classList.add('red')
+// console.log(heading.classList)
+
+const body = document.querySelector('body')
+const toggleTheme = ()=>{
+    if(body.classList.contains('light')){
+    body.classList.remove('light')
+    body.classList.add('dark')
 }
+    else{
+    body.classList.remove('dark')
+    body.classList.add('light')
+}
+}
+
 
 
 

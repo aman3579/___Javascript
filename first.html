@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+         .light{
+        background-color: antiquewhite;
+        color: black;
+     }
+     .dark{
+        background-color: black;
+        color: azure;
+     }
         /* p{
             color: red;
         }
@@ -13,24 +21,43 @@
         h1{
             color:green;
         } */
+    body{
+        transition: 0.2s ;
+    }
 
         *{
         margin:0px;
         padding:0px;
         box-sizing:border-box;}
-        body{
-            min-height:100vh;
-            transition: 0.5s ease-in background-color;
-        }
-        ul{
-            margin:20px
-        }
+     ul{
+        margin:20px
+     }
+     .red{
+        color:crimson
+     }
+     .green{
+        color:olivedrab
+     }
+     .blue{
+     color:burlywood}
+     
+     .lg{
+        font-size: larger;
+     }
+     body h1{
+        color:black
+     }
+     body.dark h1{
+        color: beige;
+     }
+    
     </style>
     <script defer src="DOM_Methods.js"></script>
 
 </head>
-<body>
-<h1>To Do list</h1>
+<body class="light">
+    <button onclick="toggleTheme()" class="Toggle">Change Theme</button>
+<h1 class="a b something">To Do list</h1>
 <input type="text">
 <button onclick="handleClick()">Add</button>
 <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores sunt inventore totam ab qui laudantium, cum illo dicta eius, deserunt debitis itaque natus aperiam quia cupiditate. Amet molestias saepe iure?</p>
