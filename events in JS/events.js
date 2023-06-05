@@ -42,5 +42,8 @@ input.addEventListener('focusout', (e)=>{
 // window.addEventListener('focus', (e)=>{
 //     console.log('user changed the tab')})
 
-window.addEventListener('focus', (e)=>{
-    console.log('tab change detected')})
+// window.addEventListener('focus', (e)=>{
+//     console.log('tab change detected')})    //WILL PRINT THE MESSAGE WHEN TAB IS 
+    
+    window.addEventListener('blur', (e)=>{
+        console.log('tab change detected')})    //blur event listenenr can also detect detect change tab
