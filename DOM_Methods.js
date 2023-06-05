@@ -30,9 +30,21 @@ content.style = ' background:olive; padding:100px; color:blueviolet '
 // console.log(date)
 
 
-let count =0;
-const log = () =>{
-    heading.innerHTML = count++
-}
-setInterval(log, 1000)
+// let count =0;
+// const log = () =>{
+//     heading.innerHTML = count++
+// }
+// setInterval(log, 1000)   
+//  it will print count value from 1 to .... evry second in the heading id.
+
+
+
+// setInterval (() =>{
+//     var randomColor = Math.floor(Math.random()*16777215).toString(16);
+    
+//     body.style =`
+//     background:#${randomColor};
+//     `
+// },1000)
+
 
