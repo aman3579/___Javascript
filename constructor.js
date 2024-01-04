@@ -62,15 +62,25 @@
 // const bike1 = new Bike('ktm', 'duke') //when new has been used before a function call then it acts as a constructor
 // console.log(bike1)
 
-const obj = {
-    name:'john',
-    age:30
-}
-const obj2 = obj
-console.log(obj2)
+// const obj = {
+//     name:'john',
+//     age:30
+// }
+// const obj2 = obj
+// console.log(obj2)
 
-obj.name ="Doe" 
-obj.age=33     //name will be changed
+// obj.name ="Doe" 
+// obj.age=33     //name will be changed
 
-console.log(obj2)
+// console.log(obj2)
 
+
+// let a = 33
+// let b=a
+// a+=50
+// console.log(a)
+// console.log(b)
+
+
+const arr = [1,2,3,4,5,6,'aman',[3,4,5,6,'ajay'],'luv',88]
+console.log(arr)
