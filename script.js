@@ -63,20 +63,30 @@
 //     + " your age is "+age+ " and your city is "+ city)
 // }
 
-greet1('greet2',88) 
-function greet1(Name, age){
-    console.log("hello!! " + Name 
-    + " your age is "+age)
-}
-greet2('greet1', 34)  //here it will not run because we have called a variable before its declaration
-const greet2 = function(Name, age){
-    console.log("hello!! " + Name 
-    + " your age is "+age)
-}
+// greet1('greet2',88) 
+// function greet1(Name, age){
+//     console.log("hello!! " + Name 
+//     + " your age is "+age)
+// }
+// greet2('greet1', 34)  //here it will not run because we have called a variable before its declaration
+// const greet2 = function(Name, age){
+//     console.log("hello!! " + Name 
+//     + " your age is "+age)
+// }
 
+console.log(this)
+
+const obj = {
+    name:"aman",
+    age:20,
+    greet:function(){
+        console.log(this)
+    }
+}
+obj.greet()  //here the "this" in the obj json points to the obj not th whole window
 
   
-//no overloading in the above case when twio functions are called.
+//no overloading in the above case when two functions are called.
 //js takes that function with bigger parameters in the functions
 
 
